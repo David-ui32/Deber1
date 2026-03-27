@@ -3,3 +3,6 @@ gpg --full-generate-key #Generates a new key and requests shipment confirmation
  gpg --list-secret-keys #List the keys I have, showing the data I have
  gpg --armor --export #We exported our key to share it in a readable format
  gpg --armor --export cristo123456xx@gmail.com > mi_llave_publica.asc #It allows you to save the public key in a file
+ gpg --import mi_llave_publicaJosue.asc #to import my partner's key
+ echo "Hola Josue, este es un mensaje secreto" > mensaje.txt #to be able to create text in a new file
+ gpg --output doc_cifrado.txt --encrypt --recipient josueandresra2006@gmail.com doc_no_cifrado.txt # It is used to encrypt messages, in this case, the text.

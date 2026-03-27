@@ -14,3 +14,4 @@ gpg --full-generate-key #Generates a new key and requests shipment confirmation
  gpg --sign-key #This helps us so we can sign my colleague's key.
  gpg --encrypt --sign #This allows us to send the encrypted and already signed file.
  gpg --decrypt #to decrypt and validate the signature in a single step
+ cat # check the final contents I get

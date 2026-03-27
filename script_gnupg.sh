@@ -11,3 +11,5 @@ gpg --full-generate-key #Generates a new key and requests shipment confirmation
  gpg --sign doc_no_cifrado.txt #It is used to create an encrypted signature and send it
  gpg --verify  #Verify the encrypted message with your partner.
  gpg --edit-key → trust #assign the trust level for my colleague's key
+ gpg --sign-key #This helps us so we can sign my colleague's key.
+ gpg --encrypt --sign #This allows us to send the encrypted and already signed file.

@@ -7,3 +7,4 @@ gpg --full-generate-key #Generates a new key and requests shipment confirmation
  echo "Hola Josue, este es un mensaje secreto" > mensaje.txt #to be able to create text in a new file
  gpg --output doc_cifrado.txt --encrypt --recipient josueandresra2006@gmail.com doc_no_cifrado.txt # It is used to encrypt messages, in this case, the text.
  doc_cifradonuevooo.txt #to decipher the message by sending
+ gpg --clearsign doc_no_cifrado.txt #It allows you to sign the file and send it.
